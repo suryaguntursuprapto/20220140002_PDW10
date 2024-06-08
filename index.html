@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pendaftaran Peminatan Prodi TI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Pendaftaran Peminatan Prodi TI</h3>
+        </div>
+        <form action="">
+            <label for="nama">Nama</label>
+            <input type="text" placeholder="Nama anda" id="nama">
+
+            <label for="nim">NIM</label>
+            <input type="text" placeholder="NIM anda" id="nim">
+
+            <label for="tanggal">Tanggal Lahir</label>
+            <input type="date" id="tanggal" name="tanggal">
+
+            <label for="semester">Semester</label>
+            <select id="semester" name="semester">
+                <option value="semester">1</option>
+                <option value="semester">2</option>
+                <option value="semester">3</option>
+                <option value="semester">4</option>
+                <option value="semester">5</option>
+                <option value="semester">6</option>
+            </select>
+
+            <p style="font-weight: bold;">Peminatan pada bidang:</p>
+            <div class="radio-group">
+                <div class="radio-item">
+                    <input type="radio" name="peminatan" id="programming" value="programming">
+                    <l for="programming">Programming</l>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="peminatan" id="desain" value="desain">
+                    <l for="desain">Desain</l>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="peminatan" id="jaringan" value="jaringan">
+                    <l for="jaringan">Jaringan</l>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="peminatan" id="data" value="data">
+                    <l for="data">UI/UX</l>
+                </div>
+            </div>
+
+            <label for="alamat">Alamat</label>
+            <textarea placeholder="Tulis alamat mu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea>
+
+            <button type="submit" onclick="kirimData()">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
